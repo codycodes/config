@@ -1,0 +1,108 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "console_title_template": "{{.Folder}}",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "os",
+          "style": "plain",
+          "foreground": "#546E7A",
+          "properties": {
+            "macos": "",
+            "windows": "",
+            "wsl": "",
+            "wsl_separator": ""
+          }
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#77E4F7",
+          "properties": {
+            "prefix": "",
+            "style": "mixed"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#FFE700",
+          "properties": {
+            "prefix": ""
+          }
+        },
+        {
+          "type": "python",
+          "style": "plain",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#43D426",
+          "display_mode": "context",
+          "properties": {
+            "prefix": " \uE235 "
+          }
+        },
+        {
+          "type": "terraform",
+          "style": "plain",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#43D426"
+        },
+        {
+          "type": "kubectl",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#43D426",
+          "properties": {
+            "prefix": " \uFD31 ",
+            "template": "{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}"
+          }
+        },
+        {
+          "type": "az",
+          "style": "plain",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#9ec3f0",
+          "properties": {
+            "display_id": false,
+            "display_name": true,
+            "prefix": " \uFD03 ",
+            "info_separator": " @ "
+          }
+        }
+      ]
+    },
+    {
+      "type": "newline"
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "exit",
+          "style": "plain",
+          "foreground": "#43D426",
+          "properties": {
+            "display_exit_code": true,
+            "always_enabled": true,
+            "error_color": "#e91e63",
+            "color_background": false,
+            "prefix": "\uE23A"
+          }
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#43D426",
+          "properties": {
+            "prefix": "",
+            "text": "\u276F"
+          }
+        }
+      ]
+    }
+  ]
+}
