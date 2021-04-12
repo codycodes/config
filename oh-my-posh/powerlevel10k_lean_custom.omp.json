@@ -34,6 +34,15 @@
           }
         },
         {
+          "type": "node",
+          "style": "plain",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#43D426",
+          "properties": {
+            "prefix": " \uE718 "
+          }
+        },
+        {
           "type": "python",
           "style": "plain",
           "powerline_symbol": "\uE0B0",
