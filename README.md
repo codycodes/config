@@ -10,3 +10,13 @@ My personal, portable configuration for different applications.
 ```
 eval "$(oh-my-posh --init --shell zsh --config $(brew --prefix oh-my-posh)/themes/powerlevel10k_lean_custom.omp.json)"
 ```
+
+# Aliases
+## [GitAlias](https://github.com/GitAlias/gitalias)
+> Note: Currently the configuration below is intended for UNIX/Linux systems! I have set up my work computer with WSL, so I'll be using that, but the only difference you'd need to make is the path and utility you use to download said config file.
+
+This is a cheat sheet/configuration of useful git aliases using the native aliasing functionality of git. I have not added any of my own yet but will do so after I learn these ones!
+```
+curl https://raw.githubusercontent.com/GitAlias/gitalias/master/gitalias.txt -o ~/.gitalias
+git config --global include.path ~/.gitalias
+```
