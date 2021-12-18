@@ -79,6 +79,17 @@
             "prefix": " \uFD03 ",
             "info_separator": " @ "
           }
+        },
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "properties": {
+            "threshold": 500,
+            "style": "austin",
+            "prefix": " <#fefefe>\ufbab</> "
+          }
         }
       ]
     },
